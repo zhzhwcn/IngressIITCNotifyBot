@@ -1,0 +1,15 @@
+[23-Oct-2015 14:16:15 Asia/Chongqing] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in Command line code on line 1
+[23-Oct-2015 06:58:23 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 35
+[23-Oct-2015 06:58:23 UTC] PHP Stack trace:
+[23-Oct-2015 06:58:23 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\artisan:0
+[23-Oct-2015 06:58:23 UTC] PHP   2. require() C:\webApp\htdocs\notify.ingress.party\artisan:18
+[23-Oct-2015 06:58:23 UTC] PHP   3. Laravel\Lumen\Application->group() C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:97
+[23-Oct-2015 06:58:23 UTC] PHP   4. call_user_func:{C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 06:58:23 UTC] PHP   5. {closure:C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:95-97}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 06:58:47 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 41
+[23-Oct-2015 06:58:47 UTC] PHP Stack trace:
+[23-Oct-2015 06:58:47 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\artisan:0
+[23-Oct-2015 06:58:47 UTC] PHP   2. require() C:\webApp\htdocs\notify.ingress.party\artisan:18
+[23-Oct-2015 06:58:47 UTC] PHP   3. Laravel\Lumen\Application->group() C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:97
+[23-Oct-2015 06:58:47 UTC] PHP   4. call_user_func:{C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 06:58:47 UTC] PHP   5. {closure:C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:95-97}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918

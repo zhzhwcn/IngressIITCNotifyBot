@@ -1,0 +1,125 @@
+[23-Oct-2015 06:39:04 UTC] PHP Fatal error:  Class 'DB' not found in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 15
+[23-Oct-2015 06:39:04 UTC] PHP Stack trace:
+[23-Oct-2015 06:39:04 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 06:39:04 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 06:39:04 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 06:39:04 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 06:39:04 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 06:39:04 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 06:39:04 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 06:39:04 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 06:39:04 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 06:39:04 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 06:39:04 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:14-16}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 06:50:01 UTC] PHP Fatal error:  Call to a member function toArray() on array in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 32
+[23-Oct-2015 06:50:01 UTC] PHP Stack trace:
+[23-Oct-2015 06:50:01 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 06:50:01 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 06:50:01 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 06:50:01 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 06:50:01 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 06:50:01 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 06:50:01 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 06:50:01 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 06:50:01 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 06:50:01 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 06:50:01 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:14-33}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 06:51:21 UTC] PHP Fatal error:  Class 'Response' not found in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 32
+[23-Oct-2015 06:51:21 UTC] PHP Stack trace:
+[23-Oct-2015 06:51:21 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 06:51:21 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 06:51:21 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 06:51:21 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 06:51:21 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 06:51:21 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 06:51:21 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 06:51:21 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 06:51:21 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 06:51:21 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 06:51:21 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:14-33}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 15:56:50 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 68
+[23-Oct-2015 15:56:50 UTC] PHP Stack trace:
+[23-Oct-2015 15:56:50 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 15:56:50 UTC] PHP   2. require() C:\webApp\htdocs\notify.ingress.party\public\index.php:14
+[23-Oct-2015 15:56:50 UTC] PHP   3. Laravel\Lumen\Application->group() C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:97
+[23-Oct-2015 15:56:50 UTC] PHP   4. call_user_func:{C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 15:56:50 UTC] PHP   5. {closure:C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:95-97}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 15:57:00 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 68
+[23-Oct-2015 15:57:00 UTC] PHP Stack trace:
+[23-Oct-2015 15:57:00 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 15:57:00 UTC] PHP   2. require() C:\webApp\htdocs\notify.ingress.party\public\index.php:14
+[23-Oct-2015 15:57:00 UTC] PHP   3. Laravel\Lumen\Application->group() C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:97
+[23-Oct-2015 15:57:00 UTC] PHP   4. call_user_func:{C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 15:57:00 UTC] PHP   5. {closure:C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:95-97}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 15:57:01 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 68
+[23-Oct-2015 15:57:01 UTC] PHP Stack trace:
+[23-Oct-2015 15:57:01 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 15:57:01 UTC] PHP   2. require() C:\webApp\htdocs\notify.ingress.party\public\index.php:14
+[23-Oct-2015 15:57:01 UTC] PHP   3. Laravel\Lumen\Application->group() C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:97
+[23-Oct-2015 15:57:01 UTC] PHP   4. call_user_func:{C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 15:57:01 UTC] PHP   5. {closure:C:\webApp\htdocs\notify.ingress.party\bootstrap\app.php:95-97}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:918
+[23-Oct-2015 16:00:59 UTC] PHP Fatal error:  Call to undefined method Laravel\Lumen\Http\ResponseFactory::header() in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 69
+[23-Oct-2015 16:00:59 UTC] PHP Stack trace:
+[23-Oct-2015 16:00:59 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 16:00:59 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 16:00:59 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 16:00:59 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 16:00:59 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 16:00:59 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 16:00:59 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 16:00:59 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 16:00:59 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 16:00:59 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:00:59 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:63-70}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:00:59 UTC] PHP Fatal error:  Call to undefined method Laravel\Lumen\Http\ResponseFactory::header() in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 69
+[23-Oct-2015 16:00:59 UTC] PHP Stack trace:
+[23-Oct-2015 16:00:59 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 16:00:59 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 16:00:59 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 16:00:59 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 16:00:59 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 16:00:59 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 16:00:59 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 16:00:59 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 16:00:59 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 16:00:59 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:00:59 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:63-70}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:01:12 UTC] PHP Fatal error:  Call to undefined method Laravel\Lumen\Http\ResponseFactory::header() in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 69
+[23-Oct-2015 16:01:12 UTC] PHP Stack trace:
+[23-Oct-2015 16:01:12 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 16:01:12 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 16:01:12 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 16:01:12 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 16:01:12 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 16:01:12 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 16:01:12 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 16:01:12 UTC] PHP Fatal error:  Call to undefined method Laravel\Lumen\Http\ResponseFactory::header() in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 69
+[23-Oct-2015 16:01:12 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 16:01:12 UTC] PHP Stack trace:
+[23-Oct-2015 16:01:12 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 16:01:12 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 16:01:12 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:01:12 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 16:01:12 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:63-70}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:01:12 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 16:01:13 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 16:01:13 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 16:01:13 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 16:01:13 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 16:01:13 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 16:01:13 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 16:01:13 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:01:13 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:63-70}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:01:57 UTC] PHP Fatal error:  Call to undefined method Laravel\Lumen\Http\ResponseFactory::header() in C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php on line 69
+[23-Oct-2015 16:01:57 UTC] PHP Stack trace:
+[23-Oct-2015 16:01:57 UTC] PHP   1. {main}() C:\webApp\htdocs\notify.ingress.party\public\index.php:0
+[23-Oct-2015 16:01:57 UTC] PHP   2. Laravel\Lumen\Application->run() C:\webApp\htdocs\notify.ingress.party\public\index.php:28
+[23-Oct-2015 16:01:57 UTC] PHP   3. Laravel\Lumen\Application->dispatch() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1141
+[23-Oct-2015 16:01:57 UTC] PHP   4. Laravel\Lumen\Application->sendThroughPipeline() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1201
+[23-Oct-2015 16:01:57 UTC] PHP   5. Laravel\Lumen\Application->Laravel\Lumen\{closure}() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1430
+[23-Oct-2015 16:01:57 UTC] PHP   6. Laravel\Lumen\Application->handleDispatcherResponse() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1200
+[23-Oct-2015 16:01:57 UTC] PHP   7. Laravel\Lumen\Application->handleFoundRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1250
+[23-Oct-2015 16:01:57 UTC] PHP   8. Laravel\Lumen\Application->callActionOnArrayBasedRoute() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1276
+[23-Oct-2015 16:01:57 UTC] PHP   9. Illuminate\Container\Container->call() C:\webApp\htdocs\notify.ingress.party\vendor\laravel\lumen-framework\src\Application.php:1302
+[23-Oct-2015 16:01:57 UTC] PHP  10. call_user_func_array:{C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
+[23-Oct-2015 16:01:57 UTC] PHP  11. Closure->{closure:C:\webApp\htdocs\notify.ingress.party\app\Http\routes.php:63-70}() C:\webApp\htdocs\notify.ingress.party\vendor\illuminate\container\Container.php:503
