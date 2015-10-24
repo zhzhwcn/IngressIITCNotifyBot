@@ -4,8 +4,6 @@
 // @category       Bot
 // @version        0.1
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
-// @updateURL      https://secure.jonatkins.com/iitc/release/plugins/scale-bar.meta.js
-// @downloadURL    https://secure.jonatkins.com/iitc/release/plugins/scale-bar.user.js
 // @description    Auto send message to the users.
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
@@ -103,20 +101,20 @@ window.plugin.notifyBot.handleMsg = function(data){
 	}
 	for(var i = 0; i < nicknames.length; i++){
       var nickname = nicknames[i];
-	  debugger;
+	  // debugger;
 	  $.get('https://notify.ingress.party/user/'+ nickname + '/' + key, function(user){
 		var msgToSend = '';
 		if(user.isNew && window.plugin.notifyBot._message.welcome !== ''){
 		  msgToSend = '@'+user.nickname+' ' + window.plugin.notifyBot._message.welcome;
 		  console.log('Ready To Send: ',msgToSend);
 		  $('#chatinput input').val(msgToSend);
-		  //window.chat.postMsg();
+		  window.chat.postMsg();
 		}
 		if(window.plugin.notifyBot._message.event !== '' && Date.parse(window.plugin.notifyBot._message.eventDate) > Date.now() && !user.sent){
 		  msgToSend = '@'+user.nickname+' ' + window.plugin.notifyBot._message.event;
 		  console.log('Ready To Send: ',msgToSend);
 		  $('#chatinput input').val(msgToSend);
-		  //window.chat.postMsg();
+		  window.chat.postMsg();
 		  $.get('https://notify.ingress.party/sent/'+ user.nickname + '/' + key);
 		}
 		
