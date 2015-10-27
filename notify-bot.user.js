@@ -4,6 +4,8 @@
 // @category       Bot
 // @version        0.1
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
+// @updateURL      https://secure.jonatkins.com/iitc/release/plugins/scale-bar.meta.js
+// @downloadURL    https://secure.jonatkins.com/iitc/release/plugins/scale-bar.user.js
 // @description    Auto send message to the users.
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
@@ -77,13 +79,18 @@ window.plugin.notifyBot.handleMsg = function(data){
 	
     for(var i = 0; i < msgs.length; i++){
       var nickname = '';
-      if(!msgs[i][2] || !msgs[i][2].plext || msgs[i][2].plext.markup.length === 0){
+      var msgObject = msgs[i][2];
+      if(!msgObject || !msgObject.plext || msgObject.plext.markup.length === 0){
         continue;
       }
-      for(var j = 0; j < msgs[i][2].plext.markup.length; j++){
-        if(msgs[i][2].plext.markup[j][0] == 'PLAYER' && msgs[i][2].plext.markup[j][1].team == 'RESISTANCE'){
-          nickname = msgs[i][2].plext.markup[j][1].plain;
+      for(var j = 0; j < msgObject.plext.markup.length; j++){
+        var _obj = msgObject.plext.markup[j];
+        if(_obj[0] == 'PLAYER' && _obj[1].team == 'RESISTANCE'){
+          nickname = _obj[1].plain;
 		}
+          if(_obj[0] == 'SENDER' && _obj[1].team == 'RESISTANCE'){
+              nickname = _obj[1].plain.replace(':','').trim();
+          }
       }
 	  if(nickname === ''){
 		console.log('Not a RES OR not an agent');
@@ -99,9 +106,10 @@ window.plugin.notifyBot.handleMsg = function(data){
 	if(nicknames.length > 0){
 	  console.log('Got Agents:',nicknames.join(','));
 	}
+	window.chat.chooseTab('faction');
 	for(var i = 0; i < nicknames.length; i++){
       var nickname = nicknames[i];
-	  // debugger;
+	  
 	  $.get('https://notify.ingress.party/user/'+ nickname + '/' + key, function(user){
 		var msgToSend = '';
 		if(user.isNew && window.plugin.notifyBot._message.welcome !== ''){
@@ -121,7 +129,7 @@ window.plugin.notifyBot.handleMsg = function(data){
 	  });
 	}
 	
-	
+	window.chat.chooseTab('all');
 	
   },'json');
 };
