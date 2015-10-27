@@ -106,7 +106,7 @@ window.plugin.notifyBot.handleMsg = function(data){
 	if(nicknames.length > 0){
 	  console.log('Got Agents:',nicknames.join(','));
 	}
-	window.chat.chooseTab('faction');
+	// window.chat.chooseTab('faction');
 	for(var i = 0; i < nicknames.length; i++){
       var nickname = nicknames[i];
 	  
@@ -115,14 +115,14 @@ window.plugin.notifyBot.handleMsg = function(data){
 		if(user.isNew && window.plugin.notifyBot._message.welcome !== ''){
 		  msgToSend = '@'+user.nickname+' ' + window.plugin.notifyBot._message.welcome;
 		  console.log('Ready To Send: ',msgToSend);
-		  $('#chatinput input').val(msgToSend);
-		  window.chat.postMsg();
+		  window.plugin.notifyBot.postMsgmsgToSend);
+		  // window.chat.postMsg();
 		}
 		if(window.plugin.notifyBot._message.event !== '' && Date.parse(window.plugin.notifyBot._message.eventDate) > Date.now() && !user.sent){
 		  msgToSend = '@'+user.nickname+' ' + window.plugin.notifyBot._message.event;
 		  console.log('Ready To Send: ',msgToSend);
-		  $('#chatinput input').val(msgToSend);
-		  window.chat.postMsg();
+		  window.plugin.notifyBot.postMsg(msgToSend);
+		  // window.chat.postMsg();
 		  $.get('https://notify.ingress.party/sent/'+ user.nickname + '/' + key);
 		}
 		
@@ -136,6 +136,28 @@ window.plugin.notifyBot.handleMsg = function(data){
 
 window.plugin.notifyBot.getKey = function(){
   return window.plugin.notifyBot._key;
+}
+
+window.plugin.notifyBot.postMsg() = function(msg){
+  var latlng = map.getCenter();
+
+  var data = {message: msg,
+              latE6: Math.round(latlng.lat*1E6),
+              lngE6: Math.round(latlng.lng*1E6),
+              tab: 'faction'};
+
+  var errMsg = 'Your message could not be delivered. You can copy&' +
+               'paste it here and try again if you want:\n\n' + msg;
+
+  window.postAjax('sendPlext', data,
+    function(response) {
+      if(response.error) alert(errMsg);
+      startRefreshTimeout(0.1*1000); //only chat uses the refresh timer stuff, so a perfect way of forcing an early refresh after a send message
+    },
+    function() {
+      alert(errMsg);
+    }
+  );
 }
 
 window.plugin.notifyBot.displayKeyDlg = function(){
