@@ -115,7 +115,7 @@ window.plugin.notifyBot.handleMsg = function(data){
 		if(user.isNew && window.plugin.notifyBot._message.welcome !== ''){
 		  msgToSend = '@'+user.nickname+' ' + window.plugin.notifyBot._message.welcome;
 		  console.log('Ready To Send: ',msgToSend);
-		  window.plugin.notifyBot.postMsgmsgToSend);
+		  window.plugin.notifyBot.postMsg(msgToSend);
 		  // window.chat.postMsg();
 		}
 		if(window.plugin.notifyBot._message.event !== '' && Date.parse(window.plugin.notifyBot._message.eventDate) > Date.now() && !user.sent){
