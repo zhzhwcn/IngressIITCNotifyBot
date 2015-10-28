@@ -4,8 +4,6 @@
 // @category       Bot
 // @version        0.1
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
-// @updateURL      https://secure.jonatkins.com/iitc/release/plugins/scale-bar.meta.js
-// @downloadURL    https://secure.jonatkins.com/iitc/release/plugins/scale-bar.user.js
 // @description    Auto send message to the users.
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
@@ -138,7 +136,7 @@ window.plugin.notifyBot.getKey = function(){
   return window.plugin.notifyBot._key;
 }
 
-window.plugin.notifyBot.postMsg() = function(msg){
+window.plugin.notifyBot.postMsg = function(msg){
   var latlng = map.getCenter();
 
   var data = {message: msg,
