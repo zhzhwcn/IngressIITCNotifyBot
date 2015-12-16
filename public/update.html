@@ -39,14 +39,14 @@
 			$('#eventDate').val(json.eventDate);
 		},'json');
 	});
-	$('#summit').click(function(){
+	$('#submit').click(function(){
 		var msg = {
 			'welcome':$('#welcome').val(),
 			'welcome':$('#welcome').val(),
 			'event':$('#event').val(),
 			'eventDate':$('#eventDate').val(),
 		};
-		$.post('https://notify.ingress.party/update/',msg,function(json){
+		$.post('https://notify.ingress.party/update',msg,function(json){
 			alert('Success');
 		});
 		return false;
