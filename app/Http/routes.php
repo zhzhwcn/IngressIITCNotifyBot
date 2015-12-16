@@ -10,6 +10,7 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
+use Illuminate\Http\Request;
 
 $app->get('/user/{nickname}/{key}', function ($nickname,$key) use ($app) {
     $DBKey = DB::table('keys')->where('key','=',$key)->first();
@@ -69,7 +70,7 @@ $app->get('/sent/{nickname}/{key}',function ($nickname,$key) use($app){
 	return response('')->header('Access-Control-Allow-Origin','https://www.ingress.com');
 });
 
-$app->post('update',function(Request $request) use($app){
+$app->post('update',function(Illuminate\Http\Request $request) use($app){
 	$key = $request->input('key');
 	$DBKey = DB::table('keys')->where('key','=',$key)->first();
 	if($DBKey === null){
