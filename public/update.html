@@ -31,7 +31,7 @@
 </div>
 
 <script>
-	$('#key').change(function(){
+	$('#key').blur(function(){
 		var key = $(this).val();
 		$.get('https://notify.ingress.party/message/' + key, function(json){
 			$('#welcome').val(json.welcome);
@@ -40,6 +40,15 @@
 		},'json');
 	});
 	$('#summit').click(function(){
+		var msg = {
+			'welcome':$('#welcome').val(),
+			'welcome':$('#welcome').val(),
+			'event':$('#event').val(),
+			'eventDate':$('#eventDate').val(),
+		};
+		$.post('https://notify.ingress.party/update/',msg,function(json){
+			alert('Success');
+		});
 		return false;
 	});
 </script>
