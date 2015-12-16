@@ -51,6 +51,7 @@ window.plugin.notifyBot.setup  = function() {
   // so we just need one hook
   addHook('publicChatDataAvailable',window.plugin.notifyBot.handleMsg)
   // addHook('factionChatDataAvailable',window.plugin.notifyBot.handleMsg)
+  setTimeout(function(){window.location.reload();},1000*60*60*8)
 };
 
 var setup =  window.plugin.notifyBot.setup;
@@ -116,7 +117,7 @@ window.plugin.notifyBot.handleMsg = function(data){
 		  window.plugin.notifyBot.postMsg(msgToSend);
 		  // window.chat.postMsg();
 		}
-		if(window.plugin.notifyBot._message.event !== '' && Date.parse(window.plugin.notifyBot._message.eventDate) > Date.now() && !user.sent){
+		if(window.plugin.notifyBot._message.event !== '' && Date.parse(window.plugin.notifyBot._message.eventDate) > Date.now() && parseInt(user.sent) === 0){
 		  msgToSend = '@'+user.nickname+' ' + window.plugin.notifyBot._message.event;
 		  console.log('Ready To Send: ',msgToSend);
 		  window.plugin.notifyBot.postMsg(msgToSend);

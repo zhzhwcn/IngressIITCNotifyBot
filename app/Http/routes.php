@@ -68,3 +68,20 @@ $app->get('/sent/{nickname}/{key}',function ($nickname,$key) use($app){
 	DB::table('user_keys')->where('key',$key)->where('nickname',$nickname)->update(['sent'=>true]);
 	return response('')->header('Access-Control-Allow-Origin','https://www.ingress.com');
 });
+
+$app->post('update',function(Request $request) use($app){
+	$key = $request->input('key');
+	$DBKey = DB::table('keys')->where('key','=',$key)->first();
+	if($DBKey === null){
+		App::abort(403,'Not Aollowed');
+	}
+	DB::table('user_keys')->where('key',$key)->update(['sent'=>false]);
+	DB::table('messages')->where('key',$key)->update(
+		[
+			'welcome'=>$request->input('welcome'),
+			'event'=>$request->input('event'),
+			'eventDate'=>$request->input('eventDate')
+		]
+	);
+	return response('');
+});
