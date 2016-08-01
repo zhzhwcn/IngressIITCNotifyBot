@@ -24,12 +24,13 @@ $app->get('/user/{nickname}/{key}', function ($nickname,$key) use ($app) {
 			'nickname'=>$nickname,
 			'key'=>$key,
 			'ban'=>0,
+			'lastSeen' => date('Y-m-d H:i:s')
 		];
 		
 		DB::table('user_keys')->insert($user);
 		$user['isNew'] = true;
 	}
-	
+	DB::table('user_keys')->where('key',$key)->where('nickname',$nickname)->update(['lastSeen' => date('Y-m-d H:i:s')]);
 	return response()->json($user)->header('Access-Control-Allow-Origin','https://www.ingress.com');
 });
 

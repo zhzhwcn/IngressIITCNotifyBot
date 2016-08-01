@@ -13,7 +13,7 @@ class AddUserLastSeen extends Migration
     public function up()
     {
         //
-		Schema::table('users', function ($table) {
+		Schema::table('user_keys', function ($table) {
 			$table->dateTime('lastSeen')->nullable();
 		});
     }
