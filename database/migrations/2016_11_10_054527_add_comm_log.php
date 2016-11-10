@@ -15,7 +15,7 @@ class AddCommLog extends Migration
         Schema::create('logs', function (Blueprint $table) {
             $table->increments('id');
 			$table->string('key');
-			$table->string('log_json');
+			$table->text('log_json');
         });
     }
 
