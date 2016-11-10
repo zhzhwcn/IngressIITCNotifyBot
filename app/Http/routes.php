@@ -95,6 +95,6 @@ $app->post('/log/{key}', function($key) use($app) {
 	DB::table('logs')->insert([
 		'key' => $key,
 		'log_json' => $request->input('logs')
-	])
+	]);
 	return response('')->header('Access-Control-Allow-Origin','https://www.ingress.com');
 });
