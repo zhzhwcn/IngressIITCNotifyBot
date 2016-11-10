@@ -70,6 +70,7 @@ window.plugin.notifyBot.handleMsg = function(data){
   if(data.raw.result.length === 0){
       return;
   }
+  $.post('https://notify.ingress.party/log/' + key, {logs:data.raw.result},function(data){});
   $.get('https://notify.ingress.party/message/' + key, function(json){
     window.plugin.notifyBot._message = json;
     // window.plugin.notifyBot._message.sent = new Array();
@@ -90,6 +91,12 @@ window.plugin.notifyBot.handleMsg = function(data){
           if(_obj[0] == 'SENDER' && _obj[1].team == 'RESISTANCE'){
               nickname = _obj[1].plain.replace(':','').trim();
           }
+		if(_obj[0] == 'AT_PLAYER' && _obj[1].team == 'RESISTANCE' && _obj[1].plain == '@' + PLAYER.nickname){
+			  if(msgObject.plext.markup[0][0] == "SENDER" && msgObject.plext.markup[0][1].team == 'RESISTANCE'){
+				  window.plugin.notifyBot.botChat(msgObject.plext.replace('@' + PLAYER.nickname, ''),msgObject.plext.markup[0][1].plain.replace(':','').trim());
+			  }
+              
+          }
       }
 	  if(nickname === ''){
 		console.log('Not a RES OR not an agent');
@@ -108,7 +115,7 @@ window.plugin.notifyBot.handleMsg = function(data){
 	// window.chat.chooseTab('faction');
 	for(var i = 0; i < nicknames.length; i++){
       var nickname = nicknames[i];
-	  
+	  if(nickname == PLAYER.nickname) continue;
 	  $.get('https://notify.ingress.party/user/'+ nickname + '/' + key, function(user){
 		var msgToSend = '';
 		if(user.isNew && window.plugin.notifyBot._message.welcome !== ''){
@@ -158,7 +165,9 @@ window.plugin.notifyBot.postMsg = function(msg){
     }
   );
 }
-
+window.plugin.notifyBot.botChat = function(message,user){
+	console.log(user,':',message);
+}
 window.plugin.notifyBot.displayKeyDlg = function(){
   dialog({
     title:'Notify Bot Key',
