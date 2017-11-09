@@ -70,7 +70,7 @@ window.plugin.notifyBot.handleMsg = function(data){
   if(data.raw.result.length === 0){
       return;
   }
-  $.post('https://notify.ingress.party/log/' + key, {logs:data.raw.result},function(data){});
+  //$.post('https://notify.ingress.party/log/' + key, {logs:data.raw.result},function(data){});
   $.get('https://notify.ingress.party/message/' + key, function(json){
     window.plugin.notifyBot._message = json;
     // window.plugin.notifyBot._message.sent = new Array();
